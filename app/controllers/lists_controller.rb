@@ -23,7 +23,7 @@ before_action :set_list, only: [:show, :destroy]
     end
   end
 
-  def delete
+  def destroy
     @list.destroy
     redirect_to lists_path, status: :see_other
   end
